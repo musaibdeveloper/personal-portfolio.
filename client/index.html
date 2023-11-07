@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         * {
             margin: 0;
@@ -47,12 +48,12 @@
             color: whitesmoke;
         }
 
-        main hr{
-            border : 0;
-            background : #9c97f1;
-            height : 1.2px;
-            margin : 40px 84px;
-        
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+
         }
 
         nav ul li a:hover {
@@ -78,6 +79,26 @@
             margin: 30px 0;
         }
 
+        .leftSection .buttons {
+
+            padding: 50px 0;
+
+
+        }
+
+        .leftSection .btn {
+            padding: 15px;
+            background: #1e2167;
+            color: white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+
+
+
+
         .rightSection img {
 
             width: 80%;
@@ -89,10 +110,117 @@
             color: blueviolet;
         }
 
+        .text-gray {
+            color: gray;
+            font-size: 1.5rem;
+        }
+
+        .text-gray2 {
+            color: gray;
+        }
+
         #element {
             color: blueviolet;
         }
 
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 135px;
+        }
+
+        .image-top {
+            width: 33px;
+            position: relative;
+            top: -42px;
+            left: -15px;
+
+        }
+
+        .vertical-title {
+
+            position: relative;
+            top: 75px;
+            right: 25px;
+            width: 150px;
+            font-size: 14px;
+
+        }
+
+        .vertical-desc {
+
+            position: relative;
+            top: 116px;
+            color: gray;
+            width: 150px;
+            font-size: 11px;
+            font-size: bold;
+
+        }
+
+        .secondSection p {
+            position: relative;
+            top: 150px;
+        }
+
+        .secondSection p strong {
+            color: #9c97f1;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.9rem;
+
+        }
+
+        .thirdSection ul li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            color: white
+        }
+
+        .thirdSection ul .html-image {
+            width: 8%;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+
+        .All-skills-list {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        footer .last {
+            background-color: violet;
+        }
     </style>
 </head>
 
@@ -117,25 +245,111 @@
         <section class="Firstsection">
             <div class="leftSection">Hi, My name is <span class="new">Syed Abdul Saboor</span> and I'm a passionate<span
                     id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <a href="https://github.com/musaibdeveloper"><button class="btn">GitHub</button></a>
+                </div>
+
             </div>
+
 
             <div class="rightSection">
                 <img src="../musaib.png" alt="">
             </div>
         </section>
-
         <hr>
-        <section class="secondSection">
 
+        <section class="secondSection">
+            <span class="text-gray"> What I have done so far 😊</span>
             <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="../school.png" alt="">
+                    <div class="vertical-title">Stamford Grammar High School(2007-2017)</div>
+                </div>
+                <div class="vertical-desc">Completed Schooling from one school. </div>
+                <div class="vertical">
+                    <img class="image-top" src="../Inter.png" alt="">
+                    <div class="vertical-title">International Junior College (2017-2019)</div>
+                </div>
+                <div class="vertical-desc">MPC Science Background. </div>
+                <div class="vertical">
+                    <img class="image-top" src="../Graduation.png" alt="">
+                    <div class="vertical-title">Lord's College of Engineering and Technology(2019-2023)</div>
+                </div>
+                <div class="vertical-desc"><strong>B.E IT ENGINEEER</strong> </div>
+
+            </div>
+
+            <p>I am Syed Abdul Saboor. A Fellow at 100dayscodingbootcamp.com. A Student of Information Techonolgy from
+                Lords Institute of Engineering and Technology Hyderabad. <br> </p>
+            <p><strong>Few more about Myself : </strong> I'm a passionate guy who looks to take challanges and figure
+                out <br>I'm a hard working individual who isn't afraird of facing new challenges ✌️</p>
+
+            <p><strong>How can I help you out?</strong> <br> Please feel free to reach me out for the projects and
+                development. I'm confident and more happy to assist you all. Open to work ❤️</p>
+
 
         </section>
 
+        <hr>
+
+        <section class="thirdSection">
+            <span class="text-gray"> What I have learn so far 💡</span>
+
+            <h1 style="font-size: 1.9rem;">Skills</h1>
+
+            <ul class="All-skills-list">
+                <i class='bx bxl-html5' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">HTML</li>
+                </i>
+                <i class='bx bxl-css3' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">CSS</li>
+                </i>
+                <i class='bx bxl-javascript'' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">JavaScript</li>
+                </i>
+                <i class=' bx bxl-nodejs' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">NodeJS</li>
+                </i>
+                <br>
+                <i class ='bx bx-code-block' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">ExpressJS</li>
+                </i>
+                <i class='bx bxl-mongodb' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">MongoDB</li>
+                </i>
+                <i class='bx bxl-react' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">ReactJS</li>
+                </i>
+
+                <i class='bx bxl-github' style="font-size: 3rem;">
+                    <li style="font-size: 1rem;">GitHub</li>
+                </i>
+
+            </ul>
+
+        </section>
+
+
+
     </main>
+
+
+
+    <footer>
+        <div="Last">
+
+
+
+            </div>
+    </footer>
+
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
-        var typed = new Typed('#element', {
+        var typed = new Typed(' #element', {
             strings: ['<i> Full Stack Developer 👨‍💻</i>'],
             typeSpeed: 50,
         });
